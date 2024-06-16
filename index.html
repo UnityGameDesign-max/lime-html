@@ -1,217 +1,307 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payday Loans</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Payday Loans</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
-    <style>
-        *{
-            font-family: Raleway, sans-serif;
-        }
-      .hero-bg {
-            position: relative;
-            overflow: hidden; 
-        }
+        <style>
+            *{
+                font-family: Raleway, sans-serif;
+            }
+        .hero-bg {
+                position: relative;
+                overflow: hidden; 
+            }
 
-      .hero-bg::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-image: url('https://images.pexels.com/photos/46164/field-of-rapeseeds-oilseed-rape-blutenmeer-yellow-46164.jpeg?auto=compress&cs=tinysrgb&w=600');
-            background-size: cover;
-            background-position: center;
-            z-index: -1;
-        }
+        .hero-bg::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-image: url('https://images.pexels.com/photos/46164/field-of-rapeseeds-oilseed-rape-blutenmeer-yellow-46164.jpeg?auto=compress&cs=tinysrgb&w=600');
+                background-size: cover;
+                background-position: center;
+                z-index: -1;
+            }
 
-      .hero-bg::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(0, 0, 0, 0.5); 
-            z-index: -1;
-        }
+        .hero-bg::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgba(0, 0, 0, 0.5); 
+                z-index: -1;
+            }
 
-      .overlap-form {
-            margin-top: -40px; 
-        }
+        .overlap-form {
+                /* margin-top: -40px;  */
+            }
 
-       .background-nav{
-            background-color: #519839;
-        }
+        .background-nav{
+                background-color: #519839;
+            }
 
-       .background-dark{
-            background-color: #49852e;
-        }
+        .background-dark{
+                background-color: #49852e;
+            }
 
-        .color-nav{
-            color: #519839;
-        }
+            .color-nav{
+                color: #519839;
+            }
 
-        .focus-green:focus {
-            border-color: #519839;
-            outline: none;
-        }
+            .focus-green:focus {
+                border-color: #519839;
+                outline: none;
+            }
 
-        .border-thick {
-            border-width: 2px;
-        }
-    </style>
-</head>
-<body class="bg-gray-100">
+            .border-thick {
+                border-width: 2px;
+            }
 
-    <header class="background-nav text-white">
-        <div class="container mx-auto px-6 py-4">
-            <div class="flex justify-between items-center">
-                <div class="text-2xl font-bold">Payday Loans</div>
-                <div class="flex md:hidden">
-                    <button id="mobile-menu-button" class="text-white focus:outline-none">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                        </svg>
-                    </button>
+
+            .custom-range {
+                -webkit-appearance: none;
+                width: 100%;
+            }
+
+            .custom-range::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                appearance: none;
+                width: 25px;
+                height: 25px;
+                background: #519839;
+                cursor: pointer;
+                border-radius: 50%;
+                margin-top: -12px;
+            }
+
+            .custom-range::-moz-range-thumb {
+                width: 25px;
+                height: 25px;
+                background: #519839;
+                cursor: pointer;
+                border-radius: 50%;
+            }
+
+            .custom-range::-webkit-slider-runnable-track {
+                width: 100%;
+                height: 4px;
+                background: #f3f3f3;
+                border-radius: 2px;
+            }
+
+            .custom-range::-moz-range-track {
+                width: 100%;
+                height: 4px;
+                background: #f3f3f3;
+                border-radius: 2px;
+            }
+
+            
+        </style>
+    </head>
+    <body class="bg-gray-100">
+
+        <header class="background-nav text-white">
+            <div class="container mx-auto px-6 py-4">
+                <div class="flex justify-between items-center">
+                    <div class="text-2xl font-bold">icsfinance</div>
+                    <div class="flex md:hidden">
+                        <button id="mobile-menu-button" class="text-white focus:outline-none">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <nav class="hidden md:flex space-x-4">
+                        <a href="#home" class="text-white">Home</a>
+                        <a href="#about" class="text-white">About Us</a>
+                    </nav>
                 </div>
-                <nav class="hidden md:flex space-x-4">
-                    <a href="#home" class="text-white">Home</a>
-                    <a href="#about" class="text-white">About Us</a>
-                </nav>
             </div>
-        </div>
-        <div id="mobile-menu" class="md:hidden px-6 background-nav">
-            <div class="px-6 py-3 flex flex-col space-y-1 sm:px-3">
-                <a href="#home" class="block text-white">Home</a>
-                <a href="#about" class="block text-white">About Us</a>
+            <div id="mobile-menu" class="md:hidden px-6 background-nav">
+                <div class="px-6 py-3 flex flex-col space-y-1 sm:px-3">
+                    <a href="#home" class="block text-white">Home</a>
+                    <a href="#about" class="block text-white">About Us</a>
+                </div>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <section id="home" class="hero-bg text-white py-20 px-10">
-        <div class="container mx-auto max-w-screen-lg flex flex-col md:flex-row items-center p-8 rounded-lg">
-            <div class="md:w-1/2 mb-8 md:mb-0 text-center md:text-left">
-                <h1 class="text-4xl font-bold mb-4">Get Your Payday Loan Instantly</h1>
-                <p class="text-xl mb-6">Fast, easy, and secure payday loans for all your needs</p>
+        <section id="home" class="hero-bg text-white py-20 px-10">
+            <div class="container mx-auto max-w-screen-lg flex flex-col md:flex-row items-center p-8 rounded-lg">
+                <div class="md:w-1/2 mb-8 md:mb-0 text-center md:text-left">
+                    <h1 class="text-4xl font-bold mb-4">Get Your Payday Loan Instantly</h1>
+                    <p class="text-xl mb-6">Fast, easy, and secure payday loans for all your needs</p>
+                </div>
+                <div class="overlap-form md:w-1/2 bg-white bg-opacity-75 p-8 rounded-lg">
+                    <form class="space-y-4">
+                        <div>
+                            <input type="text" class="w-full  border-thick focus-green p-3 border border-gray-300 text-black rounded" placeholder="ID Number">
+                        </div>
+                        
+                        <div class="flex flex-col gap-3 md:flex-row">
+                            <div class="w-full md:w-1/2">
+                                <input type="text" class="w-full border-thick p-3 focus-green border border-gray-300 text-black rounded" placeholder="First Name">
+                            </div>
+                            <div class="w-full md:w-1/2">
+                                <input type="text" class="w-full p-3 border-thick focus-green border text-black border-gray-300 rounded" placeholder="Surname">
+                            </div>
+                        </div>
+                        <div>
+                            <input type="email" class="w-full p-3 border-thick focus-green border text-black border-gray-300 rounded" placeholder="Email">
+                        </div>
+                        <div>
+                            <input type="tel" class="w-full p-3 border-thick focus-green border text-black border-gray-300 rounded" placeholder="Cellular">
+                        </div>
+
+                        <div>
+                            <label for="loan-amount" class="block text-black font-bold mb-2">Loan Amount (R500 - R8000)</label>
+                            <input type="range" id="loan-amount" name="loan-amount" min="500" max="8000" step="100" value="500" class="w-full custom-range">
+                            <span id="loan-amount-value" class="text-black">R500</span>
+                        </div>
+                        <div>
+                            <label for="loan-period" class="block text-black font-bold mb-2">Loan Period (5 - 37 days)</label>
+                            <input type="range" id="loan-period" name="loan-period" min="5" max="37" step="1" value="5" class="w-full custom-range">
+                            <span id="loan-period-value" class="text-black">5 days</span>
+                        </div>
+                        <div>
+                            <p class="text-black font-bold mb-2">Repayment Amount: <span id="repayment-amount">R0</span></p>
+                            <p class="text-black font-bold mb-2">Repayment Day: <span id="repayment-day">0</span> days from now</p>
+                        </div>
+
+                        <button type="submit" class="w-full select-none font-bold whitespace-no-wrap p-3 rounded-lg text-base leading-normal no-underline text-gray-100 background-nav hover:background-dark">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
             </div>
-            <div class="overlap-form md:w-1/2 bg-white bg-opacity-75 p-8 rounded-lg">
-                <form class="space-y-4">
-                    <div>
-                        <input type="text" class="w-full border-thick focus-green p-3 border border-gray-300 text-black rounded" placeholder="ID Number">
+        </section>
+
+        <section id="about" class="py-20 px-10">
+            <div class="container mx-auto max-w-screen-lg text-center">
+                <h2 class="text-3xl font-bold mb-6">About Us</h2>
+                <p class="text-lg">We provide quick and easy payday loans to help you manage your finances without any hassle. Our process is fast, secure, and transparent, ensuring you get the best service possible.</p>
+            </div>
+        </section>
+
+        <section id="services" class="bg-gray-200 py-20">
+            <div class="container mx-auto px-10 max-w-screen-lg text-center">
+                <h2 class="text-3xl font-bold mb-6">Reliable Payday Loan Services</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded shadow-md">
+                        <i class="fas fa-check-circle color-nav text-3xl mb-2"></i>
+                        <h3 class="text-2xl font-bold mb-4">Quick Approval</h3>
+                        <p>Get your loan approved within minutes with our quick and easy process.</p>
                     </div>
-                    
-                    <div class="flex flex-col gap-3 md:flex-row">
-                        <div class="w-full md:w-1/2">
-                            <input type="text" class="w-full border-thick p-3 focus-green border border-gray-300 text-black rounded" placeholder="First Name">
+                    <div class="bg-white p-6 rounded shadow-md">
+                        <i class="fas fa-shield-alt color-nav  text-3xl mb-2"></i>
+                        <h3 class="text-2xl font-bold mb-4">Secure Transactions</h3>
+                        <p>All transactions are secure and encrypted to ensure your information is safe.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded shadow-md">
+                        <i class="fas fa-dollar-sign color-nav  text-3xl mb-2"></i>
+                        <h3 class="text-2xl font-bold mb-4">No Hidden Fees</h3>
+                        <p>We provide clear and transparent fees with no hidden charges.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="home" class="background-nav text-white text-center py-20">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold mb-6">Ready to Get Started?</h2>
+                <p class="text-lg mb-6">Apply now and get your payday loan in minutes!</p>
+                <a href="#home" class="text-white px-6 py-3 rounded-full background-dark font-bold">Apply Now</a>
+            </div>
+        </section>
+
+        <footer class="background-dark text-white text-center py-4">
+            <div class="container mx-auto px-6 mb-8">
+                <h3 class="text-2xl font-bold mb-4">Contact Us</h3>
+                <form action="/submit-contact" method="POST" class="max-w-xl mx-auto">
+                    <div class="flex gap-3 flex-col md:flex-row mb-6">
+                        <div class="w-full md:w-1/2 mb-6 md:mb-0">
+                            <label class="block uppercase tracking-wide text-gray-300 text-xs font-bold mb-2" for="name">
+                                Name
+                            </label>
+                            <input class="appearance-none border-thick focus-green mr-2 block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="name" type="text" placeholder="Jane Doe">
                         </div>
                         <div class="w-full md:w-1/2">
-                            <input type="text" class="w-full p-3 border-thick focus-green border text-black border-gray-300 rounded" placeholder="Surname">
+                            <label class="block uppercase tracking-wide text-gray-300 text-xs font-bold mb-2" for="email">
+                                E-mail
+                            </label>
+                            <input class="appearance-none block border-thick focus-green w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="email" type="email" placeholder="janedoe@example.com">
                         </div>
                     </div>
-                    <div>
-                        <input type="email" class="w-full p-3 border-thick focus-green border text-black border-gray-300 rounded" placeholder="Email">
+                    <div class="flex flex-wrap mb-6">
+                        <div class="w-full">
+                            <label class="block uppercase tracking-wide text-gray-300 text-xs font-bold mb-2" for="message">
+                                Message
+                            </label>
+                            <textarea class="resize-none border-thick focus-green appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48" id="message" placeholder="Your message..."></textarea>
+                        </div>
                     </div>
-                    <div>
-                        <input type="tel" class="w-full p-3 border-thick focus-green border text-black border-gray-300 rounded" placeholder="Cellular">
+                    <div class="flex flex-wrap">
+                        <button type="submit" class="w-full select-none font-bold whitespace-no-wrap p-3 rounded-lg text-base leading-normal no-underline text-gray-100 background-nav hover:background-dark">
+                            Send Message
+                        </button>
                     </div>
-
-                    <button type="submit" class="w-full select-none font-bold whitespace-no-wrap p-3 rounded-lg text-base leading-normal no-underline text-gray-100 background-nav hover:background-dark">
-                        Send Message
-                    </button>
                 </form>
             </div>
-        </div>
-    </section>
-
-    <section id="about" class="py-20 px-10">
-        <div class="container mx-auto max-w-screen-lg text-center">
-            <h2 class="text-3xl font-bold mb-6">About Us</h2>
-            <p class="text-lg">We provide quick and easy payday loans to help you manage your finances without any hassle. Our process is fast, secure, and transparent, ensuring you get the best service possible.</p>
-        </div>
-    </section>
-
-    <section id="services" class="bg-gray-200 py-20">
-        <div class="container mx-auto px-10 max-w-screen-lg text-center">
-            <h2 class="text-3xl font-bold mb-6">Reliable Payday Loan Services</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-6 rounded shadow-md">
-                    <i class="fas fa-check-circle color-nav text-3xl mb-2"></i>
-                    <h3 class="text-2xl font-bold mb-4">Quick Approval</h3>
-                    <p>Get your loan approved within minutes with our quick and easy process.</p>
-                </div>
-                <div class="bg-white p-6 rounded shadow-md">
-                    <i class="fas fa-shield-alt color-nav  text-3xl mb-2"></i>
-                    <h3 class="text-2xl font-bold mb-4">Secure Transactions</h3>
-                    <p>All transactions are secure and encrypted to ensure your information is safe.</p>
-                </div>
-                <div class="bg-white p-6 rounded shadow-md">
-                    <i class="fas fa-dollar-sign color-nav  text-3xl mb-2"></i>
-                    <h3 class="text-2xl font-bold mb-4">No Hidden Fees</h3>
-                    <p>We provide clear and transparent fees with no hidden charges.</p>
-                </div>
+            <div class="flex gap-3 justify-center">
+                <p class="text-sm ">info@icsfinance.co.za</p>
+                <p class="text-sm">marketing@icsfinance.co.za</p>
+                <p class="text-sm">sales@icsfinance.co.za</p>
             </div>
-        </div>
-    </section>
+            <p class="mt-2">&copy; 2024 Payday Loans. All rights reserved.</p>
+        </footer>
 
-    <section id="home" class="background-nav text-white text-center py-20">
-        <div class="container mx-auto">
-            <h2 class="text-3xl font-bold mb-6">Ready to Get Started?</h2>
-            <p class="text-lg mb-6">Apply now and get your payday loan in minutes!</p>
-            <a href="#home" class="text-white px-6 py-3 rounded-full background-dark font-bold">Apply Now</a>
-        </div>
-    </section>
+        <script>
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
 
-    <footer class="background-dark text-white text-center py-4">
-        <div class="container mx-auto px-6">
-            <h3 class="text-2xl font-bold mb-4">Contact Us</h3>
-            <form action="/submit-contact" method="POST" class="max-w-xl mx-auto">
-                <div class="flex gap-3 flex-col md:flex-row mb-6">
-                    <div class="w-full md:w-1/2 mb-6 md:mb-0">
-                        <label class="block uppercase tracking-wide text-gray-300 text-xs font-bold mb-2" for="name">
-                            Name
-                        </label>
-                        <input class="appearance-none border-thick focus-green mr-2 block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="name" type="text" placeholder="Jane Doe">
-                    </div>
-                    <div class="w-full md:w-1/2">
-                        <label class="block uppercase tracking-wide text-gray-300 text-xs font-bold mb-2" for="email">
-                            E-mail
-                        </label>
-                        <input class="appearance-none block border-thick focus-green w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="email" type="email" placeholder="janedoe@example.com">
-                    </div>
-                </div>
-                <div class="flex flex-wrap mb-6">
-                    <div class="w-full">
-                        <label class="block uppercase tracking-wide text-gray-300 text-xs font-bold mb-2" for="message">
-                            Message
-                        </label>
-                        <textarea class="resize-none border-thick focus-green appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48" id="message" placeholder="Your message..."></textarea>
-                    </div>
-                </div>
-                <div class="flex flex-wrap">
-                    <button type="submit" class="w-full select-none font-bold whitespace-no-wrap p-3 rounded-lg text-base leading-normal no-underline text-gray-100 background-nav hover:background-dark">
-                        Send Message
-                    </button>
-                </div>
-            </form>
-        </div>
-        <p class="mt-6">&copy; 2024 Payday Loans. All rights reserved.</p>
-    </footer>
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
 
-    <script>
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
+            const loanAmountSlider = document.getElementById('loan-amount');
+            const loanPeriodSlider = document.getElementById('loan-period');
+            const loanAmountValue = document.getElementById('loan-amount-value');
+            const loanPeriodValue = document.getElementById('loan-period-value');
+            const repaymentAmount = document.getElementById('repayment-amount');
+            const repaymentDay = document.getElementById('repayment-day');
 
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-    </script>
-</body>
-</html>
+            function updateLoanCalculator() {
+                const loanAmount = parseInt(loanAmountSlider.value);
+                const loanPeriod = parseInt(loanPeriodSlider.value);
+
+            
+                const interestRate = 0.1; 
+                const totalRepayment = loanAmount + (loanAmount * interestRate * (loanPeriod / 30)); 
+                const repaymentDate = new Date();
+                repaymentDate.setDate(repaymentDate.getDate() + loanPeriod);
+
+                loanAmountValue.textContent = `R${loanAmount}`;
+                loanPeriodValue.textContent = `${loanPeriod} days`;
+                repaymentAmount.textContent = `R${totalRepayment.toFixed(2)}`;
+                repaymentDay.textContent = repaymentDate.toDateString();
+            }
+
+            loanAmountSlider.addEventListener('input', updateLoanCalculator);
+            loanPeriodSlider.addEventListener('input', updateLoanCalculator);
+
+        
+            updateLoanCalculator();
+        </script>
+    </body>
+    </html>
